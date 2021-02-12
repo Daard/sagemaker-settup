@@ -102,7 +102,7 @@ echo "Adding SSH setup to on-start.sh..."
 echo '' >> on-start.sh
 echo '# set up ngrok ssh tunnel' >> on-start.sh
 echo "export NGROK_AUTH_TOKEN=\"${NGROK_AUTH_TOKEN}\"" >> on-start.sh
-echo 'curl https://raw.githubusercontent.com/mariokostelac/sagemaker-setup/master/scripts/ssh/on-start-ngrok.sh | bash' >> on-start.sh
+echo 'curl https://raw.githubusercontent.com/Daard/sagemaker-setup/master/on-start-ngrok.sh | bash' >> on-start.sh
 
 echo "Uploading on-start.sh..."
 # update the lifecycle configuration config with updated on-start.sh script
